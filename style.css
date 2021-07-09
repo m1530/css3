@@ -24,3 +24,19 @@ overflow-x: hidden;
 .icon{
     display: flex;
 }
+
+.container, .inner{
+    width: 200px;
+    height: 200px;
+    border: 1px solid khaki;
+}
+.container{
+    
+    background-color:lightblue;
+    margin: 20px;
+}
+.inner{
+    background-color: pink;
+    transform: scale(0.5, 0.5) rotate(45deg) translate(200px, -400px);
+    font-size: 40px;
+}
