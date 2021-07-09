@@ -21,3 +21,6 @@ overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.icon{
+    display: flex;
+}
