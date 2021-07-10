@@ -40,3 +40,37 @@ overflow-x: hidden;
     transform: scale(0.5, 0.5) rotate(45deg) translate(200px, -400px);
     font-size: 40px;
 }
+
+@keyframes identifier {
+    
+}
+.transition{
+    width: 500px;
+    height: 300px;
+    border: 2px solid sienna;
+    background-color: steelblue;
+    transition: width 4s, height 4s, transform 4s, background-color 2s;
+    
+}
+
+.animation{
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    background-color: sandybrown;
+    border-radius: 50%;
+    transition: width 4s, height 4s, transform 4s, background-color 2s;
+}
+.transition:hover{
+    width: 900px;
+    height: 600px;
+    transform: translate(300px, 100px) scale(0.5, 0.5);
+    background-color: green;
+}
+.animation:hover{
+    margin-top: 70px;
+    width: 250px;
+    height: 200px;
+    transform: translate(300px, 100px) scale(2, 2);
+    background-color: red;
+}

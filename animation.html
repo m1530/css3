@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation using HTML and CSS</title>
+    <style>
+        @keyframes slider {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: springgreen;
+            }
+
+            8% {
+                background-color: teal;
+                top: 200px;
+            }
+
+            15% {
+                top: 0;
+            }
+
+            25% {
+                top: 440px;
+                background-color: red;
+            }
+
+            50% {
+                top: 0;
+            }
+
+            75% {
+                top: 440px;
+                background-color: red;
+            }
+
+            100% {
+                left: 640px;
+                top: 0;
+                background-color: green;
+            }
+        }
+
+        .animation {
+            width: 700px;
+            height: 500px;
+            border: 2px solid khaki;
+            background-color: steelblue;
+            margin-left: 30px;
+        }
+
+        .ball {
+            width: 60px;
+            height: 60px;
+            border: 1px solid salmon;
+            background-color: springgreen;
+            border-radius: 50%;
+            position: relative;
+            animation: slider 1s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animation Tutorial</h1>
+    <div class="animation">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
